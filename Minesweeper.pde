@@ -366,8 +366,7 @@ class numberMaker{
     else stroke(62, 11, 17);
     line(digitX-(digitLength/2), digitY+digitLength/8, digitX-digitLength/2, digitY+digitHeight/2);
     //vert line right top
-    if(numShown(originalNum, digitOfOutput) == 0 || numShown(originalNum, digitOfOutput) == 1 || numShown(originalNum, digitOfOutput) == 2 || numShown(originalNum, digitOfOutput) == 3 || 
-    numShown(originalNum, digitOfOutput) == 4 || numShown(originalNum, digitOfOutput) == 7 || numShown(originalNum, digitOfOutput) == 8 || numShown(originalNum, digitOfOutput) == 9){stroke(255, 0, 0);}
+    if(numShown(originalNum, digitOfOutput) != 5 || numShown(originalNum, digitOfOutput) != 6)){stroke(255, 0, 0);}
     else stroke(62, 11, 17);
     line(digitX+digitLength/2, digitY-(digitHeight/2), digitX+digitLength/2, digitY-digitLength/6);
     //vert line right bottom
