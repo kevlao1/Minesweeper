@@ -99,15 +99,21 @@ public boolean rowChecker(int row, int col){
 }
 
 public boolean getMined(int row, int col){
+if(rowChecker(row, col) == true){
  return matrix[row][col].getMined(); 
+}
 }
 
 public boolean getExplodedIdiot(int row, int col){
+if(rowChecker(row, col) == true){
  return matrix[row][col].getExplodedIdiot();
+}
 }
  
 public void setExploded(int row, int col, boolean explosion){
+if(rowChecker(row, col) == true){
 matrix[row][col].setExploded(explosion); 
+}
 }
 }  
   
