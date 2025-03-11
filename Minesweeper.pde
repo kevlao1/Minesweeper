@@ -429,7 +429,7 @@ public boolean canChecker(){
  return true;
 }
 
-/* public void checkForReroll(int row, int col){
+ public void checkForReroll(int row, int col){
  if(matrix2.getMined(row, col) == false && matrix2.mineDetector(row, col) == 0){
    clock.setStopCounting(false);
    clock.setNewStartTime(millis());
@@ -439,7 +439,7 @@ public boolean canChecker(){
   checkForReroll(row, col);
  }
 }
-*/
+
 
  public void deathScreen(){
    facer = 2;
@@ -599,7 +599,7 @@ public void mousePressed(){
   if(mouseButton == LEFT && mouseX >= 25 && mouseX<=725 && mouseY >= 275 && mouseY <= 975){
     if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getUnopenable() == false){
     facer = 1;
-   // if(canChecker() == true){checkForReroll(int((mouseY-275)/70), int(mouseX-25)/70);}
+    if(canChecker() == true){checkForReroll((int)((mouseY-275)/70), (int)((mouseX-25)/70));}
     canOpener((int)((mouseY-275)/70), (int)((mouseX-25)/70));
     if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getFlagged() == false) matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].setRemover(true);
     if(matrix2.getMined((int)((mouseY-275)/70), (int)((mouseX-25)/70)) == true){
