@@ -599,7 +599,7 @@ public void mousePressed(){
   if(mouseButton == LEFT && mouseX >= 25 && mouseX<=725 && mouseY >= 275 && mouseY <= 975){
     if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getUnopenable() == false){
     facer = 1;
-    if(canChecker() == true){checkForReroll(int((mouseY-275)/70), int(mouseX-25)/70);}
+   // if(canChecker() == true){checkForReroll(int((mouseY-275)/70), int(mouseX-25)/70);}
     canOpener((int)((mouseY-275)/70), (int)((mouseX-25)/70));
     if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getFlagged() == false) matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].setRemover(true);
     if(matrix2.getMined((int)((mouseY-275)/70), (int)((mouseX-25)/70)) == true){
