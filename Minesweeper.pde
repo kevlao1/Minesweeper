@@ -429,7 +429,7 @@ public boolean canChecker(){
  return true;
 }
 
-public void checkForReroll(int row, int col){
+/* public void checkForReroll(int row, int col){
  if(matrix2.getMined(row, col) == false && matrix2.mineDetector(row, col) == 0){
    clock.setStopCounting(false);
    clock.setNewStartTime(millis());
@@ -439,6 +439,7 @@ public void checkForReroll(int row, int col){
   checkForReroll(row, col);
  }
 }
+*/
 
  public void deathScreen(){
    facer = 2;
