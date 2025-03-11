@@ -590,13 +590,13 @@ public void winnerWinnerChickenDinner(){
 
 public void mousePressed(){
   if(mouseButton == LEFT && mouseX >= 25 && mouseX<=725 && mouseY >= 275 && mouseY <= 975){
-    if(matrixTop[(mouseY-275)/70][(mouseX-25)/70].getUnopenable() == false){
+    if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getUnopenable() == false){
     facer = 1;
-    if(canChecker() == true){checkForReroll((mouseY-275)/70, (mouseX-25)/70);}
-    canOpener((mouseY-275)/70, (mouseX-25)/70);
-    if(matrixTop[(mouseY-275)/70][(mouseX-25)/70].getFlagged() == false) matrixTop[(mouseY-275)/70][(mouseX-25)/70].setRemover(true);
-    if(matrix2.getMined((mouseY-275)/70, (mouseX-25)/70) == true){
-    matrix2.setExploded((mouseY-275)/70, (mouseX-25)/70, true);
+    if(canChecker() == true){checkForReroll(int((mouseY-275)/70), int(mouseX-25)/70);}
+    canOpener((int)((mouseY-275)/70), (int)((mouseX-25)/70));
+    if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getFlagged() == false) matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].setRemover(true);
+    if(matrix2.getMined((int)((mouseY-275)/70), (int)((mouseX-25)/70)) == true){
+    matrix2.setExploded((int)((mouseY-275)/70), (int)((mouseX-25)/70), true);
     deathScreen();
   }
     if(checkForWinCondition() == true) winnerWinnerChickenDinner();
@@ -607,13 +607,13 @@ public void mousePressed(){
     pressedIn = true;
 }
   if(mouseButton == RIGHT && mouseX >= 25 && mouseX<=725 && mouseY >= 275 && mouseY <= 975){
-    if(matrixTop[(mouseY-275)/70][(mouseX-25)/70].getUnopenable() == false){
-    if(matrixTop[(mouseY-275)/70][(mouseX-25)/70].getRemover() == false){ 
-      if(matrixTop[(mouseY-275)/70][(mouseX-25)/70].getFlagged() == true) {matrixTop[(mouseY-275)/70][(mouseX-25)/70].setFlagged(false); 
+    if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getUnopenable() == false){
+    if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getRemover() == false){ 
+      if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getFlagged() == true) {matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].setFlagged(false); 
     numFlagsLeft++;
   }
       else{
-        matrixTop[(mouseY-275)/70][(mouseX-25)/70].setFlagged(true);
+        matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].setFlagged(true);
         numFlagsLeft--;
       }
     }
@@ -623,7 +623,7 @@ public void mousePressed(){
 
 public void mouseReleased(){
   if(mouseButton == LEFT && mouseX >= 25 && mouseX<=725 && mouseY >= 275 && mouseY <= 975){
- if(matrixTop[(mouseY-275)/70][(mouseX-25)/70].getUnopenable() == false){
+ if(matrixTop[(int)((mouseY-275)/70)][(int)((mouseX-25)/70)].getUnopenable() == false){
        facer = 0;
  }
  }
