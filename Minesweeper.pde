@@ -478,8 +478,8 @@ public void buttonMaker(int facer, boolean pressed){
   triangle(416, 140, 424, 140, 424, 131);
   triangle(326, 229, 335, 229, 335, 221);
   fill(248, 247, 244);
-  triangle(416, 140, 416, 133, 425, 130);
-  triangle(325, 230, 325, 221, 335, 221);
+  triangle(416, 140, 416, 131, 424, 131);
+  triangle(326, 229, 326, 221, 335, 221);
   }
   
   if(face == 0){
