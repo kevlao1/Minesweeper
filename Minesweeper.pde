@@ -384,8 +384,7 @@ class numberMaker{
     else stroke(62, 11, 17);
     line(digitX-(3*digitLength/8), digitY, digitX+(3*digitLength/8), digitY);
     //horiz line top
-    if(numShown(originalNum, digitOfOutput) == 0 || numShown(originalNum, digitOfOutput) == 2 || numShown(originalNum, digitOfOutput) == 3 || numShown(originalNum, digitOfOutput) == 5 || 
-    numShown(originalNum, digitOfOutput) == 6 || numShown(originalNum, digitOfOutput) == 7 || numShown(originalNum, digitOfOutput) == 8 || numShown(originalNum, digitOfOutput) == 9){stroke(255, 0, 0);}
+    if(numShown(originalNum, digitOfOutput) != 1 && numShown(originalNum, digitOfOutput) != 4){stroke(255, 0, 0);}
     else stroke(62, 11, 17);
     line(digitX-(3*digitLength/8), digitY-(9*digitHeight/16), digitX+(3*digitLength/8), digitY-(9*digitHeight/16));
   }
