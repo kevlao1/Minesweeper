@@ -388,7 +388,8 @@ class numberMaker{
   }
   
   public int numShown(int givenNumber, int digitsPlace){
-    if(digitsPlace == 1) return givenNumber%10;
+    if(givenNumber == 0) return 0;
+    else if(digitsPlace == 1) return givenNumber%10;
     else return numShown(givenNumber/10, digitsPlace - 1);
   }
 }
