@@ -357,12 +357,12 @@ class numberMaker{
     strokeWeight(digitLength/6);
     stroke(62, 11, 17);
     //vert line left top
-    if(numShown(originalNum, digitOfOutput) == 0 || numShown(originalNum, digitOfOutput) == 4 || numShown(originalNum, digitOfOutput) == 5 || numShown(originalNum, digitOfOutput) == 6 || 
-    numShown(originalNum, digitOfOutput) == 8 || numShown(originalNum, digitOfOutput) == 9){stroke(255, 0, 0);}
+    if(numShown(originalNum, digitOfOutput) != 1 && numShown(originalNum, digitOfOutput) != 2 && numShown(originalNum, digitOfOutput) != 3 && numShown(originalNum, digitOfOutput) != 7){stroke(255, 0, 0);}
     else stroke(62, 11, 17);
     line(digitX-digitLength/2, digitY-(digitHeight/2), digitX-digitLength/2, digitY-digitLength/6);
     //vert line left bottom
-    if(numShown(originalNum, digitOfOutput) == 0 || numShown(originalNum, digitOfOutput) == 2 || numShown(originalNum, digitOfOutput) == 6 || numShown(originalNum, digitOfOutput) == 8){stroke(255, 0, 0);}
+    if(numShown(originalNum, digitOfOutput) != 1 && numShown(originalNum, digitOfOutput) != 3 && numShown(originalNum, digitOfOutput) != 4 && numShown(originalNum, digitOfOutput) != 5 &&
+    numShown(originalNum, digitOfOutput) != 7 && numShown(originalNum, digitOfOutput) != 9){stroke(255, 0, 0);}
     else stroke(62, 11, 17);
     line(digitX-(digitLength/2), digitY+digitLength/8, digitX-digitLength/2, digitY+digitHeight/2);
     //vert line right top
@@ -374,13 +374,11 @@ class numberMaker{
     else stroke(62, 11, 17);
     line(digitX+(digitLength/2), digitY+digitLength/8, digitX+digitLength/2, digitY+digitHeight/2);
     //horiz line bottom
-   if(numShown(originalNum, digitOfOutput) == 0 || numShown(originalNum, digitOfOutput) == 2 || numShown(originalNum, digitOfOutput) == 3 || numShown(originalNum, digitOfOutput) == 5 || 
-    numShown(originalNum, digitOfOutput) == 6 || numShown(originalNum, digitOfOutput) == 8 || numShown(originalNum, digitOfOutput) == 9){stroke(255, 0, 0);}
+   if(numShown(originalNum, digitOfOutput) != 1 && numShown(originalNum, digitOfOutput) != 4 && numShown(originalNum, digitOfOutput) != 7){stroke(255, 0, 0);}
     else stroke(62, 11, 17);
     line(digitX-(3*digitLength/8), digitY+(9*digitHeight/16), digitX+(3*digitLength/8), digitY+(9*digitHeight/16));
     //horiz line middle
-    if(numShown(originalNum, digitOfOutput) == 2 || numShown(originalNum, digitOfOutput) == 3 || numShown(originalNum, digitOfOutput) == 4 || 
-    numShown(originalNum, digitOfOutput) == 5 || numShown(originalNum, digitOfOutput) == 6 || numShown(originalNum, digitOfOutput) == 8 || numShown(originalNum, digitOfOutput) == 9){stroke(255, 0, 0);}
+    if(numShown(originalNum, digitOfOutput) != 0 && numShown(originalNum, digitOfOutput) != 1 && numShown(originalNum, digitOfOutput) == 7){stroke(255, 0, 0);}
     else stroke(62, 11, 17);
     line(digitX-(3*digitLength/8), digitY, digitX+(3*digitLength/8), digitY);
     //horiz line top
