@@ -390,7 +390,9 @@ class numberMaker{
   }
   
   public int numShown(int givenNumber, int digitsPlace){
-    if(givenNumber == 0) return 0;
+    int tester = givenNumber;
+    for(int i = 0; i < digitsPlace-1; i++){tester/10;}
+    if(tester == 0) return 0;
     else if(digitsPlace == 1) return givenNumber%10;
     else return numShown(givenNumber/10, digitsPlace - 1);
   }
