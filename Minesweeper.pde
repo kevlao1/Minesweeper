@@ -464,7 +464,7 @@ public void buttonMaker(int facer, boolean pressed){
   line(420, 135, 420, 225); 
   stroke(248, 247, 244);}
   else{
-  strokeWeight(2); 
+  strokeWeight(1); 
   stroke(118); 
   line(333, 228, 423, 228); 
   line(423, 138, 423, 228); 
@@ -476,7 +476,7 @@ public void buttonMaker(int facer, boolean pressed){
   noStroke();
   fill(118);
   triangle(416, 140, 425, 140, 425, 131);
-  triangle(326, 230, 335, 230, 335, 221);
+  triangle(326, 229, 335, 229, 335, 221);
   fill(248, 247, 244);
   triangle(416, 140, 416, 133, 425, 131);
   triangle(326, 230, 326, 221, 335, 221);
