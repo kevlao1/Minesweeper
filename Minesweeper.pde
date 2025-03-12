@@ -22,7 +22,7 @@ facer = 0;
 pressedIn = false;
 numFlagsLeft = 10;
 for(int i = 0; i < 3; i++){
-mines[i] = new numberMaker(010, 3-i, 30, 67+40*i, 180);
+mines[i] = new numberMaker(numFlagsLeft, 3-i, 30, 67+40*i, 180);
 timer[i] = new numberMaker(0, 3-i, 30, 603+40*i, 180);
 }
 }
@@ -44,7 +44,6 @@ if(matrixTop[row][col].getRemover() == false) matrixTop[row][col].show();
   buttonMaker(facer, pressedIn);
 }
 theBackground.topTab();
-text(timer[1].numShown(0, 2),200, 200)
 }
   
 class bottomSquareArray{
