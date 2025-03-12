@@ -466,8 +466,8 @@ public void buttonMaker(int facer, boolean pressed){
   else{
   strokeWeight(1); 
   stroke(118); 
-  line(333, 228, 423, 228); 
-  line(423, 138, 423, 228); 
+  line(333, 227, 423, 227); 
+  line(422, 138, 422, 228); 
   strokeWeight(8);
 }
   line(330, 135, 418, 135);
