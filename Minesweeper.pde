@@ -44,6 +44,7 @@ if(matrixTop[row][col].getRemover() == false) matrixTop[row][col].show();
   buttonMaker(facer, pressedIn);
 }
 theBackground.topTab();
+text(timer[1].numShown(0, 2),200, 200)
 }
   
 class bottomSquareArray{
