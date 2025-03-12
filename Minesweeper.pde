@@ -379,7 +379,8 @@ class numberMaker{
     else stroke(62, 11, 17);
     line(digitX-(3*digitLength/8), digitY+(9*digitHeight/16), digitX+(3*digitLength/8), digitY+(9*digitHeight/16));
     //horiz line middle
-    if(numShown(originalNum, digitOfOutput) != 0 && numShown(originalNum, digitOfOutput) != 1 && numShown(originalNum, digitOfOutput) != 7){stroke(255, 0, 0);}
+    if(numShown(originalNum, digitOfOutput) == 0) stroke(62, 11, 17);
+    else if(numShown(originalNum, digitOfOutput) != 0 && numShown(originalNum, digitOfOutput) != 1 && numShown(originalNum, digitOfOutput) != 7){stroke(255, 0, 0);}
     else stroke(62, 11, 17);
     line(digitX-(3*digitLength/8), digitY, digitX+(3*digitLength/8), digitY);
     //horiz line top
