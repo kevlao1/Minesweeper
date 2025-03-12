@@ -460,8 +460,8 @@ public void buttonMaker(int facer, boolean pressed){
   if(pressedIn == false){
   strokeWeight(8); 
   stroke(118); 
-  line(330, 225, 420, 225); 
-  line(420, 135, 420, 225); 
+  line(330, 225, 418, 225); 
+  line(420, 135, 420, 223); 
   stroke(248, 247, 244);}
   else{
   strokeWeight(1); 
@@ -470,8 +470,8 @@ public void buttonMaker(int facer, boolean pressed){
   line(423, 138, 423, 228); 
   strokeWeight(8);
 }
-  line(330, 135, 420, 135);
-  line(330, 135, 330, 225);
+  line(330, 135, 418, 135);
+  line(330, 135, 330, 223);
   if(pressedIn == false){
   noStroke();
   fill(118);
